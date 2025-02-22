@@ -12,6 +12,7 @@ const Slidable = ({restaurantMenuList, onCategorySelect, selectedCategory}) => {
       {restaurantMenuList.length > 0 ? (
         restaurantMenuList.map(category => (
           <button
+            type="button"
             key={category.menuCategoryId}
             className={
               category.menuCategoryId === selectedCategory ? 'active-tab' : ''
